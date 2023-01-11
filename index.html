@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Book Appointment</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/css/product.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <h1>Book Appointments</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__container">
+            <form class="booking-form" action="#" method="POST" id="form">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Email</label>
+                    <input type="text" name="email" id="email" required>
+                    <label for="name">Number</label>
+                    <input type="text" name="number" id="number" required>
+    
+                </div>
+    
+                <button type="submit">Sign Up</button>
+            </form>
+
+        </div>
+        
+    </main>
+    <ul id="users"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src='index.js'></script>
+</body>
+
+</html>
