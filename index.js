@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         res.data.forEach(user=>{
             const li = document.createElement('li');
             li.className = 'single__li';
-            li.innerHTML=`Username : ${user.name}, User's Email: ${user.email} , User's Number: ${user.number} <button onclick="editUser(${user.id})">EDIT</button>   <button onclick="deleteUser(${user.id})">Delete</button>`
+            li.innerHTML=`Name: ${user.name} - Email: ${user.email} - Number: ${user.number}  <button onclick="deleteUser(${user.id})">Delete</button><button onclick="editUser(${user.id})">Edit</button> `
             ul.appendChild(li);
         })
     })
