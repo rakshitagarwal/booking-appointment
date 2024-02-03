@@ -34,7 +34,10 @@ form.addEventListener('submit',(e)=>{
     .then((user)=>{
         const li = document.createElement('li');
         li.className = 'single__li';
-        li.innerHTML=`Username : ${user.data.name}, User's Email: ${user.data.email} , User's Number: ${user.data.number} <button onclick="editUser(${user.data.id})">EDIT</button><button onclick="deleteUser(${user.data.id})">Delete</button>`
+        li.innerHTML=
+        `Username : ${user.data.name},
+         User's Email: ${user.data.email} , 
+         User's Number: ${user.data.number} <button onclick="deleteUser(${user.data.id})">Delete</button>`
         ul.appendChild(li);
     })
     .catch(err=>{

@@ -12,13 +12,12 @@ exports.getusers = (req, res, next) => {
 }
 
 exports.addNewUser=(req,res,next)=>{
-    const name=req.body.name;
-    const email=req.body.email;
-    const number=req.body.number;
+    const {name, email, number} = req.body;
+   
     User.create({
-        name:name,
-        email:email,
-        number:number
+        name,
+        email,
+        number
     })
     .then((result)=>{
         res.status(201).json(result.dataValues);
